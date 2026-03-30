@@ -43,7 +43,7 @@
         /* Banner 背景 */
         .cover-photo {
             height: 200px;
-            /* 預設為漸層色，你可以更換為圖片連結 */
+            /* 預設為漸層色，你可以更換為圖片連結，例如: url('banner.jpg') center/cover */
             background: linear-gradient(135deg, #a0b4b7 0%, #d9e2e1 100%);
             border-bottom: 1px solid var(--border-color);
         }
@@ -112,63 +112,3 @@
             background: var(--linkedin-blue);
             color: white;
         }
-
-        .btn-primary:hover { background: #004182; }
-
-        .btn-secondary {
-            background: white;
-            color: var(--text-sub);
-            border: 1px solid var(--text-sub);
-        }
-
-        .btn-secondary:hover { background: #f3f3f3; color: var(--text-main); }
-
-        /* --- 內容卡片通用樣式 (關於我、經歷、技能) --- */
-        .section-card {
-            background: var(--card-bg);
-            border-radius: 8px;
-            border: 1px solid var(--border-color);
-            padding: 24px;
-            margin-bottom: 20px;
-        }
-
-        h2 {
-            font-size: 22px;
-            margin-top: 0;
-            border-bottom: 1px solid #eee;
-            padding-bottom: 10px;
-        }
-
-        /* 關於我文字 */
-        .about-text {
-            color: var(--text-main);
-            font-size: 16px;
-            white-space: pre-line; /* 保留換行 */
-        }
-
-        /* 工作經歷項目 */
-        .experience-item {
-            margin-bottom: 25px;
-            padding-bottom: 20px;
-            border-bottom: 1px dotted var(--border-color);
-        }
-
-        .experience-item:last-child { border: none; margin-bottom: 0; padding-bottom: 0; }
-
-        .job-title { font-weight: bold; font-size: 17px; margin: 0; }
-        .company-name { color: var(--linkedin-blue); font-weight: 500; font-size: 16px; margin: 4px 0; }
-        .date-location { color: var(--text-sub); font-size: 14px; margin: 2px 0; }
-        .job-description { margin-top: 10px; font-size: 15px; color: #333; }
-
-        /* 技能標籤 */
-        .skill-tags {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 12px;
-        }
-
-        .tag {
-            background: #e7f3ff; /* 淺藍色背景 */
-            color: var(--linkedin-blue);
-            padding: 8px 18px;
-            border-radius: 2
